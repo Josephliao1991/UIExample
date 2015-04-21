@@ -75,6 +75,9 @@
                                         <state key="normal" title="open door">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="opendoor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EIL-bL-O2h"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="An3-E1-RHa">
                                         <rect key="frame" x="416" y="16" width="168" height="168"/>
@@ -99,8 +102,17 @@
                                             <action selector="server:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hYu-yp-vVt"/>
                                         </connections>
                                     </button>
+                                    <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tfB-7y-A4k">
+                                        <rect key="frame" x="-300" y="0.0" width="300" height="608"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="CiM-7w-DXb">
+                                            <rect key="frame" x="0.0" y="0.0" width="300" height="608"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        </view>
+                                        <blurEffect style="light"/>
+                                    </visualEffectView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstItem="FSr-WT-op0" firstAttribute="height" secondItem="fQF-HA-oaJ" secondAttribute="height" id="7wC-QR-VMK"/>
                                     <constraint firstItem="n75-Ri-3J7" firstAttribute="width" secondItem="oFI-h4-dx6" secondAttribute="width" multiplier="0.28" id="8Ag-XR-7EF"/>
@@ -128,6 +140,9 @@
                                     <constraint firstItem="bHn-c9-1X4" firstAttribute="height" secondItem="fQF-HA-oaJ" secondAttribute="height" id="tf3-9U-OES"/>
                                     <constraint firstItem="lxp-3u-aCc" firstAttribute="top" secondItem="An3-E1-RHa" secondAttribute="bottom" constant="8" id="z6C-yT-jZR"/>
                                 </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="KHS-0t-lBF" appends="YES" id="szK-gl-Vt2"/>
+                                </connections>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -138,8 +153,24 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="oFI-h4-dx6" secondAttribute="bottom" id="mhf-pD-SFY"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="add" destination="fQF-HA-oaJ" id="8zH-Zp-lYA"/>
+                        <outlet property="cat" destination="bHn-c9-1X4" id="8F5-rc-NwM"/>
+                        <outlet property="kid" destination="n75-Ri-3J7" id="QjS-5r-ocB"/>
+                        <outlet property="ooo" destination="cN2-Hn-cnH" id="5Hg-AJ-7oD"/>
+                        <outlet property="opendoor" destination="FSr-WT-op0" id="Avw-6S-S19"/>
+                        <outlet property="run" destination="An3-E1-RHa" id="Sd5-Qn-goB"/>
+                        <outlet property="server" destination="lxp-3u-aCc" id="zPJ-26-mPz"/>
+                        <outlet property="theLeftSideView" destination="tfB-7y-A4k" id="3b4-Cr-98P"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="KHS-0t-lBF">
+                    <connections>
+                        <action selector="thePanGesture:" destination="BYZ-38-t0r" id="h33-g0-ml6"/>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="lK8-yf-Fm6"/>
+                    </connections>
+                </panGestureRecognizer>
             </objects>
         </scene>
         <!--Scan Collection View Controller-->
@@ -170,7 +201,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p5e-2s-ddq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1246" y="312"/>
+            <point key="canvasLocation" x="1437" y="315"/>
         </scene>
     </scenes>
 </document>
