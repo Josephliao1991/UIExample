@@ -173,6 +173,24 @@
                 </panGestureRecognizer>
             </objects>
         </scene>
+        <!--Device Content View Controller-->
+        <scene sceneID="62m-Ad-9nY">
+            <objects>
+                <viewController storyboardIdentifier="DeviceContentViewController" id="f7Z-Kj-tVr" customClass="DeviceContentViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="IsI-Yu-GG5"/>
+                        <viewControllerLayoutGuide type="bottom" id="IBm-KQ-GK3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="deg-4s-faD">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WGX-S2-Wud" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1125" y="-382"/>
+        </scene>
         <!--Scan Collection View Controller-->
         <scene sceneID="K73-H5-zeq">
             <objects>
@@ -201,7 +219,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p5e-2s-ddq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1437" y="315"/>
+            <point key="canvasLocation" x="1121" y="298"/>
         </scene>
     </scenes>
 </document>
