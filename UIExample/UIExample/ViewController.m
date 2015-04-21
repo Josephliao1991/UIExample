@@ -37,6 +37,27 @@
     }];
 }
 
+- (IBAction)cat:(UIButton *)sender {
+    
+}
+
+- (IBAction)kid:(UIButton *)sender {
+    
+}
+
+- (IBAction)run:(UIButton *)sender {
+    
+}
+
+- (IBAction)ooo:(UIButton *)sender {
+    
+}
+
+- (IBAction)server:(UIButton *)sender {
+}
+
+- (IBAction)opendoor:(UIButton *)sender {
+}
 
 
 @end

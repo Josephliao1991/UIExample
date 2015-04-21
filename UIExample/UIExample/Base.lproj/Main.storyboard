@@ -42,6 +42,9 @@
                                         <state key="normal" title="cat">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="cat:" destination="BYZ-38-t0r" eventType="touchUpInside" id="a2F-B8-uWd"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n75-Ri-3J7">
                                         <rect key="frame" x="216" y="16" width="168" height="168"/>
@@ -52,6 +55,9 @@
                                         <state key="normal" title="kid">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="kid:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZmY-b1-hgC"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cN2-Hn-cnH">
                                         <rect key="frame" x="216" y="192" width="168" height="168"/>
@@ -59,6 +65,9 @@
                                         <state key="normal" title="ooo">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="ooo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Yn0-Ny-Ssx"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FSr-WT-op0">
                                         <rect key="frame" x="16" y="368" width="168" height="168"/>
@@ -76,6 +85,9 @@
                                         <state key="normal" title="run">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="run:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zGy-W1-7l7"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lxp-3u-aCc">
                                         <rect key="frame" x="416" y="192" width="168" height="168"/>
@@ -83,6 +95,9 @@
                                         <state key="normal" title="server">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="server:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hYu-yp-vVt"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
