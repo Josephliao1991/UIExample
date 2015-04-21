@@ -14,8 +14,9 @@
 /*							UI protocols									*/
 /****************************************************************************/
 @protocol NDDiscoveryDelegate <NSObject>
-- (void) discoveryDidRefresh;
-- (void) discoveryStatePoweredOff;
+@optional
+- (void)discoveryDidRefresh;
+- (void)discoveryStatePoweredOff;
 @end
 
 

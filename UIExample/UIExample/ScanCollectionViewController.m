@@ -12,7 +12,11 @@
 
 @end
 
-@implementation ScanCollectionViewController
+@implementation ScanCollectionViewController {
+    NSUInteger cellCount;
+    NSArray* reversedArray;
+    NSIndexPath* saveIndexPath;
+}
 
 static NSString * const reuseIdentifier = @"Cell";
 
@@ -30,12 +34,37 @@ static NSString * const reuseIdentifier = @"Cell";
     
     
     // Do any additional setup after loading the view.
+    
+    UITapGestureRecognizer* tapRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTapGesture:)];
+    [self.collectionView addGestureRecognizer:tapRecognizer];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
+- (void)handleTapGesture:(UITapGestureRecognizer *)sender {
+    
+    if (sender.state == UIGestureRecognizerStateEnded)
+    {
+        CGPoint initialPinchPoint = [sender locationInView:self.collectionView];
+        NSIndexPath* tappedCellPath = [self.collectionView indexPathForItemAtPoint:initialPinchPoint];
+        saveIndexPath = tappedCellPath;
+        if (tappedCellPath!=nil)
+        {
+            CBPeripheral *peripheral = reversedArray[tappedCellPath.row];
+            [[NDDiscovery sharedInstance] connectPeripheral:peripheral];
+        }
+        else
+        {
+            
+        }
+    }
+}
+
+
 
 /*
  #pragma mark - Navigation
@@ -57,21 +86,65 @@ static NSString * const reuseIdentifier = @"Cell";
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
 #warning Incomplete method implementation -- Return the number of items in the section
-    return [[[NDDiscovery sharedInstance] foundPeripherals] count];
+    return cellCount;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     Cell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
     
     // Configure the cell
-    CBPeripheral *peripheral = [[[NDDiscovery sharedInstance] foundPeripherals] objectAtIndex:indexPath.row];
+    CBPeripheral *peripheral = [reversedArray objectAtIndex:indexPath.row];
     cell.label.text = peripheral.name;
     
     return cell;
 }
 
 - (void)discoveryDidRefresh {
-    [self.collectionView reloadData];
+    
+    NSArray *foundPeripherals = [[NDDiscovery sharedInstance] foundPeripherals];
+    
+    CBPeripheral *didConnectPeripheral;
+    
+    for (CBPeripheral *peripheral in foundPeripherals) {
+        if (![reversedArray containsObject:peripheral]) {
+            didConnectPeripheral = peripheral;
+        }
+    }
+    
+    reversedArray = [[NSArray alloc] initWithArray:[[foundPeripherals reverseObjectEnumerator] allObjects]];
+
+    
+    
+    if (cellCount < [[[NDDiscovery sharedInstance] foundPeripherals] count]) {
+        cellCount = [[[NDDiscovery sharedInstance] foundPeripherals] count];
+        [self.collectionView performBatchUpdates:^{
+            [self.collectionView insertItemsAtIndexPaths:[NSArray arrayWithObject:[NSIndexPath indexPathForItem:0 inSection:0]]];
+            
+        } completion:^(BOOL finished) {
+            [self.collectionView reloadData];
+
+        }];
+
+    } else if (cellCount > [[[NDDiscovery sharedInstance] foundPeripherals] count]) {
+        cellCount = [[[NDDiscovery sharedInstance] foundPeripherals] count];
+        
+        
+        
+        [self.collectionView performBatchUpdates:^{
+            if (saveIndexPath) {
+                [self.collectionView deleteItemsAtIndexPaths:[NSArray arrayWithObject:saveIndexPath]];
+            }
+        } completion:nil];
+
+        
+    }
+    
+}
+
+
+
+- (void)heartRateServiceDidReceivedNotify:(NDHeartRateService *)service {
+    
 }
 
 #pragma mark <UICollectionViewDelegate>
