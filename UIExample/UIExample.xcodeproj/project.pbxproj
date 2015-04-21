@@ -14,6 +14,7 @@
 		4E300F871AE62B6400FF65B6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E300F861AE62B6400FF65B6 /* Images.xcassets */; };
 		4E300F8A1AE62B6400FF65B6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E300F881AE62B6400FF65B6 /* LaunchScreen.xib */; };
 		4E300F961AE62B6400FF65B6 /* UIExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E300F951AE62B6400FF65B6 /* UIExampleTests.m */; };
+		4E9903991AE66001002439B9 /* DeviceContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E9903981AE66001002439B9 /* DeviceContentViewController.m */; };
 		6AF6C8681AE62F1A00BCACBA /* NDDiscovery.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF6C8611AE62F1A00BCACBA /* NDDiscovery.m */; };
 		6AF6C8691AE62F1A00BCACBA /* NDHeartRateService.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF6C8631AE62F1A00BCACBA /* NDHeartRateService.m */; };
 		6AF6C86A1AE62F1A00BCACBA /* CircleLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF6C8651AE62F1A00BCACBA /* CircleLayout.m */; };
@@ -45,6 +46,8 @@
 		4E300F8F1AE62B6400FF65B6 /* UIExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E300F941AE62B6400FF65B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4E300F951AE62B6400FF65B6 /* UIExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIExampleTests.m; sourceTree = "<group>"; };
+		4E9903971AE66001002439B9 /* DeviceContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceContentViewController.h; sourceTree = "<group>"; };
+		4E9903981AE66001002439B9 /* DeviceContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceContentViewController.m; sourceTree = "<group>"; };
 		6AF6C8601AE62F1A00BCACBA /* NDDiscovery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDDiscovery.h; sourceTree = "<group>"; };
 		6AF6C8611AE62F1A00BCACBA /* NDDiscovery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDDiscovery.m; sourceTree = "<group>"; };
 		6AF6C8621AE62F1A00BCACBA /* NDHeartRateService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDHeartRateService.h; sourceTree = "<group>"; };
@@ -100,6 +103,8 @@
 				4E300F7E1AE62B6400FF65B6 /* AppDelegate.m */,
 				4E300F801AE62B6400FF65B6 /* ViewController.h */,
 				4E300F811AE62B6400FF65B6 /* ViewController.m */,
+				4E9903971AE66001002439B9 /* DeviceContentViewController.h */,
+				4E9903981AE66001002439B9 /* DeviceContentViewController.m */,
 				6AF6C86C1AE62F3B00BCACBA /* ScanCollectionViewController.h */,
 				6AF6C86D1AE62F3B00BCACBA /* ScanCollectionViewController.m */,
 				6AF6C8601AE62F1A00BCACBA /* NDDiscovery.h */,
@@ -252,6 +257,7 @@
 				4E300F7C1AE62B6400FF65B6 /* main.m in Sources */,
 				6AF6C86A1AE62F1A00BCACBA /* CircleLayout.m in Sources */,
 				6AF6C86B1AE62F1A00BCACBA /* Cell.m in Sources */,
+				4E9903991AE66001002439B9 /* DeviceContentViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

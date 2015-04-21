@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "ScanCollectionViewController.h"
+#import "DeviceContentViewController.h"
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UIVisualEffectView *theLeftSideView;
@@ -67,28 +68,46 @@
 #pragma -
 #pragma -mark IBAction Setting
 
+-(void)goToDeviceContentView_device:(int)device{
+    
+    DeviceContentViewController *deviceContentViewController = [[self storyboard] instantiateViewControllerWithIdentifier:@"DeviceContentViewController"];
+    
+    deviceContentViewController.device = device;
+    
+    [self presentViewController:deviceContentViewController animated:YES completion:^{
+        //
+    }];
+    
+}
+
 - (IBAction)cat:(UIButton *)sender {
     
+    [self goToDeviceContentView_device:0];
 }
 
 - (IBAction)kid:(UIButton *)sender {
     
+    [self goToDeviceContentView_device:1];
 }
 
 - (IBAction)run:(UIButton *)sender {
     
+    [self goToDeviceContentView_device:2];
 }
 
 - (IBAction)ooo:(UIButton *)sender {
     
+    [self goToDeviceContentView_device:3];
 }
 
 - (IBAction)server:(UIButton *)sender {
+    
+    [self goToDeviceContentView_device:4];
 }
 
 - (IBAction)opendoor:(UIButton *)sender {
-     self.theLeftSideView.frame = CGRectMake(0, 0, self.view.frame.size.width/2
-                                             ,self.view.frame.size.height);
+    
+    [self goToDeviceContentView_device:5];
 }
 
 - (IBAction)thePanGesture:(UIPanGestureRecognizer *)sender {
