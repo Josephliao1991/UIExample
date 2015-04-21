@@ -130,7 +130,7 @@
         <!--Scan Collection View Controller-->
         <scene sceneID="K73-H5-zeq">
             <objects>
-                <collectionViewController id="cBe-SP-cDp" customClass="ScanCollectionViewController" sceneMemberID="viewController">
+                <collectionViewController storyboardIdentifier="ScanCollectionViewController" id="cBe-SP-cDp" customClass="ScanCollectionViewController" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="Ggt-14-NTn">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

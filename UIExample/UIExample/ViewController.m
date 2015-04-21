@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "ScanCollectionViewController.h"
 
 @interface ViewController ()
 
@@ -27,6 +28,15 @@
     // Dispose of any resources that can be recreated.
 }
 - (IBAction)newDeviceButton:(UIButton *)sender {
+    
+    ScanCollectionViewController * scanCollectionViewController =
+    [[self storyboard] instantiateViewControllerWithIdentifier:@"ScanCollectionViewController"];
+    
+    [self presentViewController:scanCollectionViewController animated:YES completion:^{
+        //
+    }];
+    
+    
 }
 
 @end
