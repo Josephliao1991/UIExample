@@ -39,7 +39,7 @@
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="bHn-c9-1X4" secondAttribute="height" multiplier="1:1" id="Ocp-Qz-6db"/>
                                         </constraints>
-                                        <state key="normal" title="Button">
+                                        <state key="normal" title="cat">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
@@ -49,21 +49,21 @@
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="n75-Ri-3J7" secondAttribute="height" multiplier="1:1" id="eRd-tH-Jax"/>
                                         </constraints>
-                                        <state key="normal" title="Button">
+                                        <state key="normal" title="kid">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cN2-Hn-cnH">
                                         <rect key="frame" x="216" y="192" width="168" height="168"/>
                                         <color key="backgroundColor" red="0.45882352939999999" green="0.77647058820000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <state key="normal" title="Button">
+                                        <state key="normal" title="ooo">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FSr-WT-op0">
                                         <rect key="frame" x="16" y="368" width="168" height="168"/>
                                         <color key="backgroundColor" red="0.45882352939999999" green="0.77647058820000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <state key="normal" title="Button">
+                                        <state key="normal" title="open door">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
@@ -73,14 +73,14 @@
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="An3-E1-RHa" secondAttribute="height" multiplier="1:1" id="NLp-AY-ug9"/>
                                         </constraints>
-                                        <state key="normal" title="Button">
+                                        <state key="normal" title="run">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lxp-3u-aCc">
                                         <rect key="frame" x="416" y="192" width="168" height="168"/>
                                         <color key="backgroundColor" red="0.45882352939999999" green="0.77647058820000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <state key="normal" title="Button">
+                                        <state key="normal" title="server">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
@@ -160,7 +160,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p5e-2s-ddq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1285" y="312"/>
+            <point key="canvasLocation" x="1246" y="312"/>
         </scene>
     </scenes>
 </document>

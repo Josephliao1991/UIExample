@@ -35,8 +35,8 @@
     [self presentViewController:scanCollectionViewController animated:YES completion:^{
         //
     }];
-    
-    
 }
+
+
 
 @end
