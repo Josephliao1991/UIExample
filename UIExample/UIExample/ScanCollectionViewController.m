@@ -28,6 +28,7 @@ static NSString * const reuseIdentifier = @"Cell";
     [[NDDiscovery sharedInstance] setDiscoveryDelegate:self];
     [[NDDiscovery sharedInstance] setPeripheralDelegate:self];
     
+    
     // Do any additional setup after loading the view.
 }
 
