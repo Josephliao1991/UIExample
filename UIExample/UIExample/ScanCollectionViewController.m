@@ -8,7 +8,7 @@
 
 #import "ScanCollectionViewController.h"
 
-@interface ScanCollectionViewController ()
+@interface ScanCollectionViewController () <NDDiscoveryDelegate,NDHeartRateServiceProtocol>
 
 @end
 
@@ -23,7 +23,10 @@ static NSString * const reuseIdentifier = @"Cell";
     // self.clearsSelectionOnViewWillAppear = NO;
     
     // Register cell classes
-    [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:reuseIdentifier];
+    [self.collectionView registerClass:[Cell class] forCellWithReuseIdentifier:reuseIdentifier];
+    
+    [[NDDiscovery sharedInstance] setDiscoveryDelegate:self];
+    [[NDDiscovery sharedInstance] setPeripheralDelegate:self];
     
     // Do any additional setup after loading the view.
 }
@@ -34,34 +37,40 @@ static NSString * const reuseIdentifier = @"Cell";
 }
 
 /*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 
 #pragma mark <UICollectionViewDataSource>
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
 #warning Incomplete method implementation -- Return the number of sections
-    return 0;
+    return 1;
 }
 
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
 #warning Incomplete method implementation -- Return the number of items in the section
-    return 0;
+    return [[[NDDiscovery sharedInstance] foundPeripherals] count];
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
+    Cell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
     
     // Configure the cell
+    CBPeripheral *peripheral = [[[NDDiscovery sharedInstance] foundPeripherals] objectAtIndex:indexPath.row];
+    cell.label.text = peripheral.name;
     
     return cell;
+}
+
+- (void)discoveryDidRefresh {
+    [self.collectionView reloadData];
 }
 
 #pragma mark <UICollectionViewDelegate>

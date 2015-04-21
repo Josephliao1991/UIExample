@@ -7,6 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "NDDiscovery.h"
+#import "CircleLayout.h"
+#import "Cell.h"
 
 @interface ScanCollectionViewController : UICollectionViewController
 
