@@ -55,7 +55,12 @@
     UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(x, 0, width, height)];
     imageView.backgroundColor = [UIColor orangeColor];
     [imageView setContentMode:UIViewContentModeScaleAspectFit];
-    imageView.image = [UIImage imageNamed:@"sport.png"];
+    if (self.modeScrollView.subviews.count %2 ==0) {
+        imageView.image = [UIImage imageNamed:@"sport.png"];
+    } else {
+        imageView.image = [UIImage imageNamed:@"door.png"];
+
+    }
     imageView.layer.cornerRadius = 0.8;
     
     [self.modeScrollView addSubview:imageView];
