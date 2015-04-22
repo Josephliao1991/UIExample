@@ -11,10 +11,15 @@
 		4E300F7F1AE62B6400FF65B6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E300F7E1AE62B6400FF65B6 /* AppDelegate.m */; };
 		4E300F821AE62B6400FF65B6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E300F811AE62B6400FF65B6 /* ViewController.m */; };
 		4E300F851AE62B6400FF65B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E300F831AE62B6400FF65B6 /* Main.storyboard */; };
-		4E300F871AE62B6400FF65B6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E300F861AE62B6400FF65B6 /* Images.xcassets */; };
 		4E300F8A1AE62B6400FF65B6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E300F881AE62B6400FF65B6 /* LaunchScreen.xib */; };
 		4E300F961AE62B6400FF65B6 /* UIExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E300F951AE62B6400FF65B6 /* UIExampleTests.m */; };
 		4E9903991AE66001002439B9 /* DeviceContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E9903981AE66001002439B9 /* DeviceContentViewController.m */; };
+		4E9903A21AE73271002439B9 /* VOSegment.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E99039B1AE73271002439B9 /* VOSegment.m */; };
+		4E9903A31AE73271002439B9 /* VOContentLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E99039D1AE73271002439B9 /* VOContentLayer.m */; };
+		4E9903A41AE73271002439B9 /* VOIndicatorAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E99039F1AE73271002439B9 /* VOIndicatorAnimation.m */; };
+		4E9903A51AE73271002439B9 /* VOSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E9903A11AE73271002439B9 /* VOSegmentedControl.m */; };
+		4E9903A81AE73505002439B9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E9903A71AE73505002439B9 /* Images.xcassets */; };
+		4E9903AA1AE73659002439B9 /* torah-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E9903A91AE73659002439B9 /* torah-32.png */; };
 		6AF6C8681AE62F1A00BCACBA /* NDDiscovery.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF6C8611AE62F1A00BCACBA /* NDDiscovery.m */; };
 		6AF6C8691AE62F1A00BCACBA /* NDHeartRateService.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF6C8631AE62F1A00BCACBA /* NDHeartRateService.m */; };
 		6AF6C86A1AE62F1A00BCACBA /* CircleLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF6C8651AE62F1A00BCACBA /* CircleLayout.m */; };
@@ -41,13 +46,22 @@
 		4E300F801AE62B6400FF65B6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		4E300F811AE62B6400FF65B6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		4E300F841AE62B6400FF65B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		4E300F861AE62B6400FF65B6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		4E300F891AE62B6400FF65B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		4E300F8F1AE62B6400FF65B6 /* UIExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E300F941AE62B6400FF65B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4E300F951AE62B6400FF65B6 /* UIExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIExampleTests.m; sourceTree = "<group>"; };
 		4E9903971AE66001002439B9 /* DeviceContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceContentViewController.h; sourceTree = "<group>"; };
 		4E9903981AE66001002439B9 /* DeviceContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceContentViewController.m; sourceTree = "<group>"; };
+		4E99039A1AE73271002439B9 /* VOSegment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VOSegment.h; sourceTree = "<group>"; };
+		4E99039B1AE73271002439B9 /* VOSegment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VOSegment.m; sourceTree = "<group>"; };
+		4E99039C1AE73271002439B9 /* VOContentLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VOContentLayer.h; sourceTree = "<group>"; };
+		4E99039D1AE73271002439B9 /* VOContentLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VOContentLayer.m; sourceTree = "<group>"; };
+		4E99039E1AE73271002439B9 /* VOIndicatorAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VOIndicatorAnimation.h; sourceTree = "<group>"; };
+		4E99039F1AE73271002439B9 /* VOIndicatorAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VOIndicatorAnimation.m; sourceTree = "<group>"; };
+		4E9903A01AE73271002439B9 /* VOSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VOSegmentedControl.h; sourceTree = "<group>"; };
+		4E9903A11AE73271002439B9 /* VOSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VOSegmentedControl.m; sourceTree = "<group>"; };
+		4E9903A71AE73505002439B9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		4E9903A91AE73659002439B9 /* torah-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "torah-32.png"; sourceTree = "<group>"; };
 		6AF6C8601AE62F1A00BCACBA /* NDDiscovery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDDiscovery.h; sourceTree = "<group>"; };
 		6AF6C8611AE62F1A00BCACBA /* NDDiscovery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDDiscovery.m; sourceTree = "<group>"; };
 		6AF6C8621AE62F1A00BCACBA /* NDHeartRateService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDHeartRateService.h; sourceTree = "<group>"; };
@@ -99,6 +113,7 @@
 		4E300F781AE62B6400FF65B6 /* UIExample */ = {
 			isa = PBXGroup;
 			children = (
+				4E9903A61AE7327A002439B9 /* VOSegmentedControl */,
 				4E300F7D1AE62B6400FF65B6 /* AppDelegate.h */,
 				4E300F7E1AE62B6400FF65B6 /* AppDelegate.m */,
 				4E300F801AE62B6400FF65B6 /* ViewController.h */,
@@ -115,9 +130,10 @@
 				6AF6C8651AE62F1A00BCACBA /* CircleLayout.m */,
 				6AF6C8661AE62F1A00BCACBA /* Cell.h */,
 				6AF6C8671AE62F1A00BCACBA /* Cell.m */,
+				4E9903A71AE73505002439B9 /* Images.xcassets */,
 				4E300F831AE62B6400FF65B6 /* Main.storyboard */,
-				4E300F861AE62B6400FF65B6 /* Images.xcassets */,
 				4E300F881AE62B6400FF65B6 /* LaunchScreen.xib */,
+				4E9903A91AE73659002439B9 /* torah-32.png */,
 				4E300F791AE62B6400FF65B6 /* Supporting Files */,
 			);
 			path = UIExample;
@@ -147,6 +163,21 @@
 				4E300F941AE62B6400FF65B6 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4E9903A61AE7327A002439B9 /* VOSegmentedControl */ = {
+			isa = PBXGroup;
+			children = (
+				4E99039A1AE73271002439B9 /* VOSegment.h */,
+				4E99039B1AE73271002439B9 /* VOSegment.m */,
+				4E99039C1AE73271002439B9 /* VOContentLayer.h */,
+				4E99039D1AE73271002439B9 /* VOContentLayer.m */,
+				4E99039E1AE73271002439B9 /* VOIndicatorAnimation.h */,
+				4E99039F1AE73271002439B9 /* VOIndicatorAnimation.m */,
+				4E9903A01AE73271002439B9 /* VOSegmentedControl.h */,
+				4E9903A11AE73271002439B9 /* VOSegmentedControl.m */,
+			);
+			name = VOSegmentedControl;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,9 +260,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E9903A81AE73505002439B9 /* Images.xcassets in Resources */,
 				4E300F851AE62B6400FF65B6 /* Main.storyboard in Resources */,
 				4E300F8A1AE62B6400FF65B6 /* LaunchScreen.xib in Resources */,
-				4E300F871AE62B6400FF65B6 /* Images.xcassets in Resources */,
+				4E9903AA1AE73659002439B9 /* torah-32.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,15 +281,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E9903A21AE73271002439B9 /* VOSegment.m in Sources */,
 				4E300F821AE62B6400FF65B6 /* ViewController.m in Sources */,
 				6AF6C86E1AE62F3B00BCACBA /* ScanCollectionViewController.m in Sources */,
+				4E9903A51AE73271002439B9 /* VOSegmentedControl.m in Sources */,
 				4E300F7F1AE62B6400FF65B6 /* AppDelegate.m in Sources */,
 				6AF6C8681AE62F1A00BCACBA /* NDDiscovery.m in Sources */,
+				4E9903A31AE73271002439B9 /* VOContentLayer.m in Sources */,
 				6AF6C8691AE62F1A00BCACBA /* NDHeartRateService.m in Sources */,
 				4E300F7C1AE62B6400FF65B6 /* main.m in Sources */,
 				6AF6C86A1AE62F1A00BCACBA /* CircleLayout.m in Sources */,
 				6AF6C86B1AE62F1A00BCACBA /* Cell.m in Sources */,
 				4E9903991AE66001002439B9 /* DeviceContentViewController.m in Sources */,
+				4E9903A41AE73271002439B9 /* VOIndicatorAnimation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

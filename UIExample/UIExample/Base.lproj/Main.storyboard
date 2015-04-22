@@ -184,12 +184,55 @@
                     <view key="view" contentMode="scaleToFill" id="deg-4s-faD">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LAm-Rf-Bua">
+                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oeG-1d-waa">
+                                        <rect key="frame" x="210" y="0.0" width="180" height="44"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uxd-or-i8u">
+                                        <rect key="frame" x="8" y="9" width="30" height="26"/>
+                                        <color key="backgroundColor" red="0.96310763889999995" green="0.87664929609999998" blue="0.56270711569999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="backButton:" destination="f7Z-Kj-tVr" eventType="touchUpInside" id="Ol4-i1-c1m"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aTH-gI-0Dj">
+                                        <rect key="frame" x="562" y="8" width="30" height="26"/>
+                                        <color key="backgroundColor" red="0.96310763889999995" green="0.87664929609999998" blue="0.56270711569999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="editButton:" destination="f7Z-Kj-tVr" eventType="touchUpInside" id="Vha-Xc-vwo"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.71390561263200225" green="0.85160586388434978" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="oeG-1d-waa" firstAttribute="width" secondItem="LAm-Rf-Bua" secondAttribute="width" multiplier="0.3" id="7zp-aG-Ua5"/>
+                                    <constraint firstAttribute="centerX" secondItem="oeG-1d-waa" secondAttribute="centerX" id="CW3-zm-3oa"/>
+                                    <constraint firstAttribute="height" constant="44" id="anO-0U-A4t"/>
+                                    <constraint firstAttribute="bottom" secondItem="oeG-1d-waa" secondAttribute="bottom" id="db4-JU-huv"/>
+                                    <constraint firstItem="oeG-1d-waa" firstAttribute="top" secondItem="LAm-Rf-Bua" secondAttribute="top" id="kJm-2c-dLl"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="LAm-Rf-Bua" firstAttribute="leading" secondItem="deg-4s-faD" secondAttribute="leadingMargin" constant="-16" id="6FC-xi-A9O"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="LAm-Rf-Bua" secondAttribute="trailing" constant="-16" id="MzV-KF-CxX"/>
+                            <constraint firstItem="LAm-Rf-Bua" firstAttribute="top" secondItem="IsI-Yu-GG5" secondAttribute="bottom" constant="8" id="r56-8S-Po6"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="theTitle" destination="oeG-1d-waa" id="NcO-S7-RE8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WGX-S2-Wud" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1125" y="-382"/>
+            <point key="canvasLocation" x="1168" y="-508"/>
         </scene>
         <!--Scan Collection View Controller-->
         <scene sceneID="K73-H5-zeq">
