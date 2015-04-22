@@ -11,6 +11,12 @@
 #import "DeviceContentViewController.h"
 
 @interface ViewController ()
+{
+    
+    UIView *personal,*setting,*aboutUs;
+    UILabel *personalLebel , *settingLabel ,*aboutUsLabel;
+    
+}
 @property (weak, nonatomic) IBOutlet UIVisualEffectView *theLeftSideView;
 
 @property (weak, nonatomic) IBOutlet UIButton *cat;
@@ -40,7 +46,6 @@
     [self.ooo setBackgroundImage:[UIImage imageNamed:@"sport.jpg"] forState:UIControlStateNormal];
     [self.opendoor setBackgroundImage:[UIImage imageNamed:@"door.jpg"] forState:UIControlStateNormal];
     
-
     
 }
 
@@ -64,8 +69,44 @@
 -(void)viewWillLayoutSubviews{
     
     [super viewWillLayoutSubviews];
+    
     self.theLeftSideView.frame = CGRectMake(-self.view.frame.size.width/2, 0, self.view.frame.size.width/2, self.view.frame.size.height);
     
+    //Personal
+    personal = [[UIView alloc]initWithFrame:CGRectMake(0, 0, self.theLeftSideView.frame.size.width, self.theLeftSideView.frame.size.height/5)];
+    personal.backgroundColor = [UIColor whiteColor];
+    personal.alpha = 0.3;
+    
+    personalLebel = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, personal.frame.size.width, 30)];
+    personalLebel.text = @"I Love iNeDot";
+    personalLebel.textAlignment = NSTextAlignmentCenter;
+    personalLebel.center = personal.center;
+    [personal addSubview:personalLebel];
+    [self.theLeftSideView addSubview:personal];
+    
+    //Setting
+    setting = [[UIView alloc]initWithFrame:CGRectMake(0, personal.frame.size.height+5, self.theLeftSideView.frame.size.width, self.theLeftSideView.frame.size.height/5)];
+    setting.backgroundColor = [UIColor whiteColor];
+    setting.alpha = 0.3;
+    
+    settingLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, setting.frame.size.width, 30)];
+    settingLabel.text = @"Setting";
+    settingLabel.textAlignment = NSTextAlignmentCenter;
+    //    settingLebel.center = setting.center;
+    [setting addSubview:settingLabel];
+    [self.theLeftSideView addSubview:setting];
+    
+    //About US
+    
+    aboutUs = [[UIView alloc]initWithFrame:CGRectMake(0, self.theLeftSideView.frame.size.height*0.8, setting.frame.size.width, setting.frame.size.height)];
+    aboutUs.backgroundColor = [UIColor yellowColor];
+    aboutUs.alpha = 0.07;
+    
+    aboutUsLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, aboutUs.frame.size.height-30, aboutUs.frame.size.width, 21)];
+    aboutUsLabel.text = @"About Us";
+    aboutUsLabel.textAlignment = NSTextAlignmentCenter;
+    [aboutUs addSubview:aboutUsLabel];
+    [self.theLeftSideView addSubview:aboutUs];
     
 //    self.cat.layer.cornerRadius = 15;
 //    self.kid.layer.cornerRadius = 15;
@@ -75,41 +116,6 @@
 //    self.server.layer.cornerRadius = 15;
 //    self.add.layer.cornerRadius = 15;
     
-    //Personal
-    UIView *personal = [[UIView alloc]initWithFrame:CGRectMake(0, 0, self.theLeftSideView.frame.size.width, self.theLeftSideView.frame.size.height/5)];
-    personal.backgroundColor = [UIColor whiteColor];
-    personal.alpha = 0.3;
-    
-    UILabel *personalLebel = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, personal.frame.size.width, 30)];
-    personalLebel.text = @"I Love iNeDot";
-    personalLebel.textAlignment = NSTextAlignmentCenter;
-    personalLebel.center = personal.center;
-    [personal addSubview:personalLebel];
-    [self.theLeftSideView addSubview:personal];
-    
-    //Setting
-    UIView *setting = [[UIView alloc]initWithFrame:CGRectMake(0, personal.frame.size.height+5, self.theLeftSideView.frame.size.width, self.theLeftSideView.frame.size.height/5)];
-    setting.backgroundColor = [UIColor whiteColor];
-    setting.alpha = 0.3;
-    
-    UILabel *settingLebel = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, setting.frame.size.width, 30)];
-    settingLebel.text = @"Setting";
-    settingLebel.textAlignment = NSTextAlignmentCenter;
-//    settingLebel.center = setting.center;
-    [setting addSubview:settingLebel];
-    [self.theLeftSideView addSubview:setting];
-    
-    //About US
-    
-    UIView *aboutUs = [[UIView alloc]initWithFrame:CGRectMake(0, self.theLeftSideView.frame.size.height*0.8, setting.frame.size.width, setting.frame.size.height)];
-    aboutUs.backgroundColor = [UIColor yellowColor];
-    aboutUs.alpha = 0.07;
-    
-    UILabel *aboutUsLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, aboutUs.frame.size.height-30, aboutUs.frame.size.width, 21)];
-    aboutUsLabel.text = @"About Us";
-    aboutUsLabel.textAlignment = NSTextAlignmentCenter;
-    [aboutUs addSubview:aboutUsLabel];
-    [self.theLeftSideView addSubview:aboutUs];
 }
 
 #pragma -
