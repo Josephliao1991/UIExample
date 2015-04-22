@@ -7,6 +7,7 @@
 //
 
 #import "ScanCollectionViewController.h"
+#import "ModeSettingViewController.h"
 
 @interface ScanCollectionViewController () <NDDiscoveryDelegate,NDHeartRateServiceProtocol>
 
@@ -134,7 +135,14 @@ static NSString * const reuseIdentifier = @"Cell";
             if (saveIndexPath) {
                 [self.collectionView deleteItemsAtIndexPaths:[NSArray arrayWithObject:saveIndexPath]];
             }
-        } completion:nil];
+        } completion:^(BOOL finished) {
+            //
+            ModeSettingViewController *msvc = [self.storyboard instantiateViewControllerWithIdentifier:@"ModeSetting"];
+            [self presentViewController:msvc animated:YES completion:^{
+                [[NDDiscovery sharedInstance] stopScanning];
+            }];
+            
+        }];
 
         
     }

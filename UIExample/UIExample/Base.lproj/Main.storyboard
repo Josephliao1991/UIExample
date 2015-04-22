@@ -264,5 +264,77 @@
             </objects>
             <point key="canvasLocation" x="1121" y="298"/>
         </scene>
+        <!--Mode Setting View Controller-->
+        <scene sceneID="KOt-Hv-hNH">
+            <objects>
+                <viewController storyboardIdentifier="ModeSetting" id="9hD-mB-ADR" customClass="ModeSettingViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EO6-Y6-G6u"/>
+                        <viewControllerLayoutGuide type="bottom" id="20v-av-jXE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CQt-1m-Q2C">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sft-j8-aUl" customClass="JT3DScrollView">
+                                <rect key="frame" x="16" y="177" width="568" height="261"/>
+                            </scrollView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="iNeDot" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hvk-4J-ORa">
+                                <rect key="frame" x="252" y="20" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3vt-s4-39J">
+                                <rect key="frame" x="255" y="550" width="91" height="38"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="Done">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="請選擇一種使用情境。" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="36N-0T-CfV">
+                                <rect key="frame" x="16" y="484" width="568" height="58"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="58" id="aB0-ln-Blw"/>
+                                </constraints>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="點選更改裝置名稱" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="JM6-7Q-aKo">
+                                <rect key="frame" x="180" y="58" width="240" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="8v1-vP-BLH"/>
+                                    <constraint firstAttribute="height" constant="35" id="RJ7-Ru-xdb"/>
+                                </constraints>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hvk-4J-ORa" firstAttribute="top" secondItem="EO6-Y6-G6u" secondAttribute="bottom" id="2Ni-H6-igh"/>
+                            <constraint firstItem="36N-0T-CfV" firstAttribute="leading" secondItem="CQt-1m-Q2C" secondAttribute="leadingMargin" id="2Yi-nI-jAe"/>
+                            <constraint firstItem="sft-j8-aUl" firstAttribute="leading" secondItem="CQt-1m-Q2C" secondAttribute="leadingMargin" id="2j7-KM-DI2"/>
+                            <constraint firstItem="20v-av-jXE" firstAttribute="top" secondItem="3vt-s4-39J" secondAttribute="bottom" constant="12" id="5ik-6L-nIB"/>
+                            <constraint firstItem="36N-0T-CfV" firstAttribute="trailing" secondItem="CQt-1m-Q2C" secondAttribute="trailingMargin" id="FVb-qP-rVb"/>
+                            <constraint firstAttribute="centerX" secondItem="hvk-4J-ORa" secondAttribute="centerX" id="GH2-Ky-r0k"/>
+                            <constraint firstAttribute="centerX" secondItem="JM6-7Q-aKo" secondAttribute="centerX" id="Me9-yK-dEX"/>
+                            <constraint firstItem="sft-j8-aUl" firstAttribute="trailing" secondItem="CQt-1m-Q2C" secondAttribute="trailingMargin" id="Or7-ue-pai"/>
+                            <constraint firstItem="3vt-s4-39J" firstAttribute="top" secondItem="36N-0T-CfV" secondAttribute="bottom" constant="8" id="UcJ-mL-U17"/>
+                            <constraint firstItem="20v-av-jXE" firstAttribute="top" secondItem="sft-j8-aUl" secondAttribute="bottom" constant="16" id="gkA-rP-0Nr"/>
+                            <constraint firstAttribute="centerX" secondItem="3vt-s4-39J" secondAttribute="centerX" id="ieq-K4-Yed"/>
+                            <constraint firstItem="sft-j8-aUl" firstAttribute="centerY" secondItem="CQt-1m-Q2C" secondAttribute="centerY" id="qGP-qe-xib"/>
+                            <constraint firstItem="JM6-7Q-aKo" firstAttribute="top" secondItem="hvk-4J-ORa" secondAttribute="bottom" constant="8" id="wSa-pR-ddz"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="modeScrollView" destination="sft-j8-aUl" id="xMy-UL-36U"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CZ6-c5-pQz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1814" y="298"/>
+        </scene>
     </scenes>
 </document>

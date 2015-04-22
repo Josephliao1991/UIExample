@@ -210,7 +210,7 @@
 
 //    [_peripheralDelegate heartRateServiceDidChangeStatus:service];
     if (![_memberPeripherals containsObject:peripheral]) {
-        [self addSavedDevice:peripheral];
+//        [self addSavedDevice:peripheral];
     }
     [_discoveryDelegate discoveryDidRefresh];
 }
