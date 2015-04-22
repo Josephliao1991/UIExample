@@ -46,6 +46,21 @@
     [self.ooo setBackgroundImage:[UIImage imageNamed:@"sport.jpg"] forState:UIControlStateNormal];
     [self.opendoor setBackgroundImage:[UIImage imageNamed:@"door.jpg"] forState:UIControlStateNormal];
     
+    personal = [[UIView alloc]init];
+    personalLebel = [[UILabel alloc]init];
+    [personal addSubview:personalLebel];
+    [self.theLeftSideView addSubview:personal];
+    
+    setting = [[UIView alloc]init];
+    settingLabel = [[UILabel alloc]init];
+    [setting addSubview:settingLabel];
+    [self.theLeftSideView addSubview:setting];
+    
+    aboutUs = [[UIView alloc]init];
+    aboutUsLabel = [[UILabel alloc] init];
+    [aboutUs addSubview:aboutUsLabel];
+    [self.theLeftSideView addSubview:aboutUs];
+    
     
 }
 
@@ -73,40 +88,37 @@
     self.theLeftSideView.frame = CGRectMake(-self.view.frame.size.width/2, 0, self.view.frame.size.width/2, self.view.frame.size.height);
     
     //Personal
-    personal = [[UIView alloc]initWithFrame:CGRectMake(0, 0, self.theLeftSideView.frame.size.width, self.theLeftSideView.frame.size.height/5)];
+    personal.frame = CGRectMake(0, 0, self.theLeftSideView.frame.size.width, self.theLeftSideView.frame.size.height/5);
     personal.backgroundColor = [UIColor whiteColor];
     personal.alpha = 0.3;
     
-    personalLebel = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, personal.frame.size.width, 30)];
+    personalLebel.frame = CGRectMake(0, 0, personal.frame.size.width, 30);
     personalLebel.text = @"I Love iNeDot";
     personalLebel.textAlignment = NSTextAlignmentCenter;
     personalLebel.center = personal.center;
-    [personal addSubview:personalLebel];
-    [self.theLeftSideView addSubview:personal];
+    
     
     //Setting
-    setting = [[UIView alloc]initWithFrame:CGRectMake(0, personal.frame.size.height+5, self.theLeftSideView.frame.size.width, self.theLeftSideView.frame.size.height/5)];
+    setting.frame = CGRectMake(0, personal.frame.size.height+5, self.theLeftSideView.frame.size.width, self.theLeftSideView.frame.size.height/5);
     setting.backgroundColor = [UIColor whiteColor];
     setting.alpha = 0.3;
     
-    settingLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, setting.frame.size.width, 30)];
+    settingLabel.frame = CGRectMake(0, 0, setting.frame.size.width, 30);
     settingLabel.text = @"Setting";
     settingLabel.textAlignment = NSTextAlignmentCenter;
     //    settingLebel.center = setting.center;
-    [setting addSubview:settingLabel];
-    [self.theLeftSideView addSubview:setting];
+    
     
     //About US
     
-    aboutUs = [[UIView alloc]initWithFrame:CGRectMake(0, self.theLeftSideView.frame.size.height*0.8, setting.frame.size.width, setting.frame.size.height)];
+    aboutUs.frame = CGRectMake(0, self.theLeftSideView.frame.size.height*0.8, setting.frame.size.width, setting.frame.size.height);
     aboutUs.backgroundColor = [UIColor yellowColor];
     aboutUs.alpha = 0.07;
     
-    aboutUsLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, aboutUs.frame.size.height-30, aboutUs.frame.size.width, 21)];
+    aboutUsLabel.frame = CGRectMake(0, aboutUs.frame.size.height-30, aboutUs.frame.size.width, 21);
     aboutUsLabel.text = @"About Us";
     aboutUsLabel.textAlignment = NSTextAlignmentCenter;
-    [aboutUs addSubview:aboutUsLabel];
-    [self.theLeftSideView addSubview:aboutUs];
+    
     
 //    self.cat.layer.cornerRadius = 15;
 //    self.kid.layer.cornerRadius = 15;
