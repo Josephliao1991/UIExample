@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "UIExample/ViewController.m"
-            timestampString = "451374082.242895"
+            timestampString = "451377766.996562"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "123"
-            endingLineNumber = "123"
+            startingLineNumber = "126"
+            endingLineNumber = "126"
             landmarkName = "-thePanGesture:"
             landmarkType = "5">
          </BreakpointContent>

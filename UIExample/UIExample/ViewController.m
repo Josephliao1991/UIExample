@@ -74,6 +74,9 @@
 //    self.opendoor.layer.cornerRadius = 15;
 //    self.server.layer.cornerRadius = 15;
 //    self.add.layer.cornerRadius = 15;
+    
+    
+    
 }
 
 #pragma -

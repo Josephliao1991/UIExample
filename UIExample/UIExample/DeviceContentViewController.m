@@ -8,8 +8,13 @@
 
 #import "DeviceContentViewController.h"
 #import "VOSegmentedControl.h"
+#import "ModeSettingViewController.h"
 
 @interface DeviceContentViewController ()
+
+{
+    NSArray *title;
+}
 
 @property (weak, nonatomic) IBOutlet UILabel *theTitle;
 
@@ -23,6 +28,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    title = @[@"Cat",@"Kid",@"Run",@"重訓",@"中控",@"開冰箱"];
+    self.theTitle.text = title[self.device];
     NSLog(@"Now Is %d Device",self.device);
     
     VOSegmentedControl *segctrl1 = [[VOSegmentedControl alloc] initWithSegments:
@@ -63,6 +70,7 @@
 
 - (void)segmentCtrlValuechange: (VOSegmentedControl *)segmentCtrl{
     NSLog(@"%@: value --> %@",@(segmentCtrl.tag), @(segmentCtrl.selectedSegmentIndex));
+    self.theTitle.text = title[segmentCtrl.selectedSegmentIndex];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -74,6 +82,12 @@
 #pragma -
 #pragma - IBActioin
 - (IBAction)editButton:(UIButton *)sender {
+    
+    ModeSettingViewController *modeSettingViewController = [[self storyboard] instantiateViewControllerWithIdentifier:@"ModeSetting"];
+    [self presentViewController:modeSettingViewController animated:YES completion:^{
+        //
+    }];
+    
 }
 
 - (IBAction)backButton:(UIButton *)sender {
