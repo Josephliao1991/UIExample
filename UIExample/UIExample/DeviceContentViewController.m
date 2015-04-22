@@ -36,11 +36,11 @@
     NSLog(@"Now Is %d Device",self.device);
     
     VOSegmentedControl *segctrl1 = [[VOSegmentedControl alloc] initWithSegments:
-                                    @[@{@"text": @"Cat",@"image": @"torah-32"},
-                                      @{@"text": @"Kid",@"image": @"torah-32"},
-                                      @{@"text": @"Run",@"image": @"torah-32"},
-                                      @{@"text": @"重訓",@"image": @"torah-32"},
-                                      @{@"text": @"中控",@"image": @"torah-32"},
+                                    @[@{@"text": @"Cat",@"image": @"s_lada.jpg"},
+                                      @{@"text": @"Kid",@"image": @"s_kid.jpg"},
+                                      @{@"text": @"Run",@"image": @"s_run.jpg"},
+                                      @{@"text": @"重訓",@"image": @"s_sport.jpg"},
+                                      @{@"text": @"中控",@"image": @"s_server.jpg"},
                                       @{@"text": @"開冰箱",@"image": @"s_door.jpg"}]];
     
     segctrl1.contentStyle = VOContentStyleImageTop;
