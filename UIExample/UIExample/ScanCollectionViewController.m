@@ -111,7 +111,7 @@ static NSString * const reuseIdentifier = @"Cell";
             didConnectPeripheral = peripheral;
         }
     }
-    
+
     reversedArray = [[NSArray alloc] initWithArray:[[foundPeripherals reverseObjectEnumerator] allObjects]];
 
     
