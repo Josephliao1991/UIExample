@@ -41,6 +41,7 @@
 		4EA8536B1AE76B93003B6192 /* door.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4EA853561AE76B93003B6192 /* door.jpg */; };
 		4EA8536C1AE76B93003B6192 /* door@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4EA853571AE76B93003B6192 /* door@2x.jpg */; };
 		4EA8536D1AE76B93003B6192 /* door@3x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4EA853581AE76B93003B6192 /* door@3x.jpg */; };
+		6A2BB2001AE781120048D7F6 /* door.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A2BB1FF1AE781120048D7F6 /* door.png */; };
 		6A5C3A8B1AE73E0400ACDB16 /* ModeSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A5C3A8A1AE73E0400ACDB16 /* ModeSettingViewController.m */; };
 		6A5C3A921AE748FF00ACDB16 /* JT3DScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A5C3A911AE748FF00ACDB16 /* JT3DScrollView.m */; };
 		6A5C3A941AE74F1700ACDB16 /* sport.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A5C3A931AE74F1700ACDB16 /* sport.png */; };
@@ -107,6 +108,7 @@
 		4EA853561AE76B93003B6192 /* door.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = door.jpg; sourceTree = "<group>"; };
 		4EA853571AE76B93003B6192 /* door@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "door@2x.jpg"; sourceTree = "<group>"; };
 		4EA853581AE76B93003B6192 /* door@3x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "door@3x.jpg"; sourceTree = "<group>"; };
+		6A2BB1FF1AE781120048D7F6 /* door.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = door.png; sourceTree = "<group>"; };
 		6A5C3A891AE73E0400ACDB16 /* ModeSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModeSettingViewController.h; sourceTree = "<group>"; };
 		6A5C3A8A1AE73E0400ACDB16 /* ModeSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModeSettingViewController.m; sourceTree = "<group>"; };
 		6A5C3A901AE748FF00ACDB16 /* JT3DScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JT3DScrollView.h; sourceTree = "<group>"; };
@@ -185,6 +187,7 @@
 				6A5C3A901AE748FF00ACDB16 /* JT3DScrollView.h */,
 				6A5C3A911AE748FF00ACDB16 /* JT3DScrollView.m */,
 				6A5C3A931AE74F1700ACDB16 /* sport.png */,
+				6A2BB1FF1AE781120048D7F6 /* door.png */,
 				4E9903A71AE73505002439B9 /* Images.xcassets */,
 				4E300F831AE62B6400FF65B6 /* Main.storyboard */,
 				4E300F881AE62B6400FF65B6 /* LaunchScreen.xib */,
@@ -346,6 +349,7 @@
 			files = (
 				4EA8535A1AE76B93003B6192 /* kid@2x.jpg in Resources */,
 				4EA8535F1AE76B93003B6192 /* lada.jpg in Resources */,
+				6A2BB2001AE781120048D7F6 /* door.png in Resources */,
 				4EA853661AE76B93003B6192 /* server@2x.jpg in Resources */,
 				4EA853651AE76B93003B6192 /* server.jpg in Resources */,
 				4EA853681AE76B93003B6192 /* sport.jpg in Resources */,
