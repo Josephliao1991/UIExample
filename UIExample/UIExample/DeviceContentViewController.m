@@ -14,6 +14,8 @@
 
 {
     NSArray *title;
+    NSArray *imageName;
+    UIImageView *imageView;
 }
 
 @property (weak, nonatomic) IBOutlet UILabel *theTitle;
@@ -29,6 +31,7 @@
     // Do any additional setup after loading the view.
     
     title = @[@"Cat",@"Kid",@"Run",@"重訓",@"中控",@"開冰箱"];
+    imageName = @[@"lada",@"kid",@"run",@"sport",@"server",@"door"];
     self.theTitle.text = title[self.device];
     NSLog(@"Now Is %d Device",self.device);
     
@@ -66,11 +69,18 @@
        forControlEvents:UIControlEventValueChanged];
 
     
+    imageView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width*0.9,self.view.frame.size.width*0.9)];
+    imageView.center = self.view.center;
+    imageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@.jpg",imageName[self.device]]];
+    [self.view addSubview:imageView];
+    
+    
 }
 
 - (void)segmentCtrlValuechange: (VOSegmentedControl *)segmentCtrl{
     NSLog(@"%@: value --> %@",@(segmentCtrl.tag), @(segmentCtrl.selectedSegmentIndex));
     self.theTitle.text = title[segmentCtrl.selectedSegmentIndex];
+    imageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@.jpg",imageName[segmentCtrl.selectedSegmentIndex]]];
 }
 
 - (void)didReceiveMemoryWarning {
