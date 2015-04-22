@@ -194,14 +194,14 @@
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uxd-or-i8u">
-                                        <rect key="frame" x="8" y="9" width="30" height="26"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uxd-or-i8u">
+                                        <rect key="frame" x="8" y="8" width="30" height="26"/>
                                         <color key="backgroundColor" red="0.96310763889999995" green="0.87664929609999998" blue="0.56270711569999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <action selector="backButton:" destination="f7Z-Kj-tVr" eventType="touchUpInside" id="Ol4-i1-c1m"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aTH-gI-0Dj">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aTH-gI-0Dj">
                                         <rect key="frame" x="562" y="8" width="30" height="26"/>
                                         <color key="backgroundColor" red="0.96310763889999995" green="0.87664929609999998" blue="0.56270711569999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
@@ -213,9 +213,15 @@
                                 <constraints>
                                     <constraint firstItem="oeG-1d-waa" firstAttribute="width" secondItem="LAm-Rf-Bua" secondAttribute="width" multiplier="0.3" id="7zp-aG-Ua5"/>
                                     <constraint firstAttribute="centerX" secondItem="oeG-1d-waa" secondAttribute="centerX" id="CW3-zm-3oa"/>
+                                    <constraint firstItem="aTH-gI-0Dj" firstAttribute="trailing" secondItem="LAm-Rf-Bua" secondAttribute="trailingMargin" id="CcX-Et-xYS"/>
+                                    <constraint firstItem="aTH-gI-0Dj" firstAttribute="top" secondItem="LAm-Rf-Bua" secondAttribute="topMargin" id="Q3f-ql-qFY"/>
+                                    <constraint firstItem="uxd-or-i8u" firstAttribute="top" secondItem="LAm-Rf-Bua" secondAttribute="topMargin" id="V4z-t4-haR"/>
                                     <constraint firstAttribute="height" constant="44" id="anO-0U-A4t"/>
                                     <constraint firstAttribute="bottom" secondItem="oeG-1d-waa" secondAttribute="bottom" id="db4-JU-huv"/>
+                                    <constraint firstItem="uxd-or-i8u" firstAttribute="leading" secondItem="LAm-Rf-Bua" secondAttribute="leadingMargin" id="dm8-EY-nxs"/>
                                     <constraint firstItem="oeG-1d-waa" firstAttribute="top" secondItem="LAm-Rf-Bua" secondAttribute="top" id="kJm-2c-dLl"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="aTH-gI-0Dj" secondAttribute="bottom" constant="2" id="sSz-VZ-AdQ"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="uxd-or-i8u" secondAttribute="bottom" constant="2" id="zBV-L0-fX0"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -232,7 +238,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WGX-S2-Wud" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1168" y="-508"/>
+            <point key="canvasLocation" x="1278" y="-1348"/>
         </scene>
         <!--Scan Collection View Controller-->
         <scene sceneID="K73-H5-zeq">
