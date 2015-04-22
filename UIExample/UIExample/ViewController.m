@@ -32,6 +32,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    [self.kid setBackgroundImage:[UIImage imageNamed:@"kid.jpg"] forState:UIControlStateNormal];
+    [self.add setBackgroundImage:[UIImage imageNamed:@"add.jpg"] forState:UIControlStateNormal];
+    [self.cat setBackgroundImage:[UIImage imageNamed:@"lada.jpg"] forState:UIControlStateNormal];
+    [self.run setBackgroundImage:[UIImage imageNamed:@"run.jpg"] forState:UIControlStateNormal];
+    [self.server setBackgroundImage:[UIImage imageNamed:@"server.jpg"] forState:UIControlStateNormal];
+    [self.ooo setBackgroundImage:[UIImage imageNamed:@"sport.jpg"] forState:UIControlStateNormal];
+    [self.opendoor setBackgroundImage:[UIImage imageNamed:@"door.jpg"] forState:UIControlStateNormal];
+    
+
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -56,13 +66,13 @@
     [super viewWillLayoutSubviews];
     self.theLeftSideView.frame = CGRectMake(-self.view.frame.size.width/2, 0, self.view.frame.size.width/2, self.view.frame.size.height);
     
-    self.cat.layer.cornerRadius = 15;
-    self.kid.layer.cornerRadius = 15;
-    self.run.layer.cornerRadius = 15;
-    self.ooo.layer.cornerRadius = 15;
-    self.opendoor.layer.cornerRadius = 15;
-    self.server.layer.cornerRadius = 15;
-    self.add.layer.cornerRadius = 15;
+//    self.cat.layer.cornerRadius = 15;
+//    self.kid.layer.cornerRadius = 15;
+//    self.run.layer.cornerRadius = 15;
+//    self.ooo.layer.cornerRadius = 15;
+//    self.opendoor.layer.cornerRadius = 15;
+//    self.server.layer.cornerRadius = 15;
+//    self.add.layer.cornerRadius = 15;
 }
 
 #pragma -
