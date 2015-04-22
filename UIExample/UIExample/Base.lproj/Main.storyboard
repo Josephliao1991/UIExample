@@ -290,6 +290,9 @@
                                 <state key="normal" title="Done">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="doneButtonPressed:" destination="9hD-mB-ADR" eventType="touchUpInside" id="OSE-l9-WnZ"/>
+                                </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="請選擇一種使用情境。" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="36N-0T-CfV">
                                 <rect key="frame" x="16" y="484" width="568" height="58"/>

@@ -22,7 +22,7 @@
     // Do any additional setup after loading the view.
     
     self.modeScrollView.delegate = self;
-    self.modeScrollView.effect = JT3DScrollViewEffectCarousel;
+    self.modeScrollView.effect = JT3DScrollViewEffectCards;
     
 
 }
@@ -62,6 +62,12 @@
     self.modeScrollView.contentSize = CGSizeMake(x + width, height);
 }
 
+- (IBAction)doneButtonPressed:(id)sender {
+    [self.presentingViewController.presentingViewController dismissViewControllerAnimated:YES completion:^{
+        //
+    }];
+
+}
 
 /*
 #pragma mark - Navigation
