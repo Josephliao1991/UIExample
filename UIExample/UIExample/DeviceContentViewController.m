@@ -41,7 +41,7 @@
                                       @{@"text": @"Run",@"image": @"torah-32"},
                                       @{@"text": @"重訓",@"image": @"torah-32"},
                                       @{@"text": @"中控",@"image": @"torah-32"},
-                                      @{@"text": @"開冰箱",@"image": @"torah-32"}]];
+                                      @{@"text": @"開冰箱",@"image": @"s_door.jpg"}]];
     
     segctrl1.contentStyle = VOContentStyleImageTop;
     segctrl1.indicatorStyle = VOSegCtrlIndicatorStyleBox;
