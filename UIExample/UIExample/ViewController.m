@@ -66,6 +66,7 @@
     [super viewWillLayoutSubviews];
     self.theLeftSideView.frame = CGRectMake(-self.view.frame.size.width/2, 0, self.view.frame.size.width/2, self.view.frame.size.height);
     
+    
 //    self.cat.layer.cornerRadius = 15;
 //    self.kid.layer.cornerRadius = 15;
 //    self.run.layer.cornerRadius = 15;
