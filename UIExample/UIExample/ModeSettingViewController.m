@@ -71,9 +71,21 @@
 }
 
 - (IBAction)doneButtonPressed:(id)sender {
-    [self.presentingViewController.presentingViewController dismissViewControllerAnimated:YES completion:^{
-        //
-    }];
+    
+    if ([self.fromWhere isEqualToString:@"device"]) {
+        [self dismissViewControllerAnimated:YES completion:^{
+            //
+        }];
+    }else{
+     
+        [self.presentingViewController.presentingViewController
+         dismissViewControllerAnimated:YES
+         completion:^{
+            //
+             
+        }];
+        
+    }
 
 }
 

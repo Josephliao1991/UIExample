@@ -94,6 +94,7 @@
 - (IBAction)editButton:(UIButton *)sender {
     
     ModeSettingViewController *modeSettingViewController = [[self storyboard] instantiateViewControllerWithIdentifier:@"ModeSetting"];
+    modeSettingViewController.fromWhere = @"device";
     [self presentViewController:modeSettingViewController animated:YES completion:^{
         //
     }];

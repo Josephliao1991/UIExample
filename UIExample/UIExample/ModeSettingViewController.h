@@ -10,4 +10,6 @@
 
 @interface ModeSettingViewController : UIViewController
 
+@property (assign, nonatomic) NSString *fromWhere;
+
 @end
