@@ -172,6 +172,7 @@
                     </connections>
                 </panGestureRecognizer>
             </objects>
+            <point key="canvasLocation" x="1836" y="-516"/>
         </scene>
         <!--Device Content View Controller-->
         <scene sceneID="62m-Ad-9nY">
@@ -191,19 +192,27 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oeG-1d-waa">
                                         <rect key="frame" x="210" y="0.0" width="180" height="44"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uxd-or-i8u">
                                         <rect key="frame" x="8" y="8" width="30" height="26"/>
                                         <color key="backgroundColor" red="0.96310763889999995" green="0.87664929609999998" blue="0.56270711569999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                        <state key="normal" title="X">
+                                            <color key="titleColor" red="0.0063195706309999997" green="0.012047660660000001" blue="0.1433278093" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
                                         <connections>
                                             <action selector="backButton:" destination="f7Z-Kj-tVr" eventType="touchUpInside" id="Ol4-i1-c1m"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aTH-gI-0Dj">
-                                        <rect key="frame" x="562" y="8" width="30" height="26"/>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aTH-gI-0Dj">
+                                        <rect key="frame" x="560" y="8" width="32" height="32"/>
                                         <color key="backgroundColor" red="0.96310763889999995" green="0.87664929609999998" blue="0.56270711569999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <state key="normal" image="new.png">
+                                            <color key="titleColor" red="0.003063404443" green="0.021445035000000001" blue="0.24792850380000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
                                         <connections>
                                             <action selector="editButton:" destination="f7Z-Kj-tVr" eventType="touchUpInside" id="Vha-Xc-vwo"/>
                                         </connections>
@@ -238,7 +247,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WGX-S2-Wud" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1278" y="-1348"/>
+            <point key="canvasLocation" x="1856" y="-1316"/>
         </scene>
         <!--Scan Collection View Controller-->
         <scene sceneID="K73-H5-zeq">
@@ -339,6 +348,7 @@
                     </view>
                     <connections>
                         <outlet property="modeScrollView" destination="sft-j8-aUl" id="xMy-UL-36U"/>
+                        <outlet property="nameTextField" destination="hvk-4J-ORa" id="zsk-zh-mpV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CZ6-c5-pQz" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -346,4 +356,7 @@
             <point key="canvasLocation" x="1814" y="298"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="new.png" width="32" height="32"/>
+    </resources>
 </document>

@@ -12,6 +12,7 @@
 @interface ModeSettingViewController () <UIScrollViewDelegate>
 
 @property (weak, nonatomic) IBOutlet JT3DScrollView *modeScrollView;
+@property (weak, nonatomic) IBOutlet UITextField *nameTextField;
 
 @end
 
@@ -72,6 +73,15 @@
         //
     }];
 
+}
+
+
+-(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
+    
+    if (self.nameTextField.editing) {
+        [self.nameTextField resignFirstResponder];
+    }
+    
 }
 
 /*
